@@ -1,6 +1,7 @@
 package homxuwang.github.io.dao;
 
 import homxuwang.github.io.entity.Seckill;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
 import java.util.List;
@@ -17,7 +18,7 @@ public interface SeckillDao {
      * @param killTime 执行减库存的时间
      * @return 如果影响行数>1，表示更新的记录行数
      */
-    int reduceNumber(long seckillId, Date killTime);
+    int reduceNumber(@Param("seckillId") long seckillId,@Param("killTime") Date killTime);
 
     /**
      * 根据id查询秒杀库存对象
@@ -32,5 +33,5 @@ public interface SeckillDao {
      * @param limit 偏移量之后要取的个数
      * @return
      */
-    List<Seckill> queryAll(int offset, int limit);
+    List<Seckill> queryAll(@Param("offset") int offset, @Param("limit") int limit);
 }
