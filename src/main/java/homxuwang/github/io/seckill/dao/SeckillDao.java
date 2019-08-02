@@ -1,6 +1,6 @@
-package homxuwang.github.io.dao;
+package homxuwang.github.io.seckill.dao;
 
-import homxuwang.github.io.entity.Seckill;
+import homxuwang.github.io.seckill.entity.Seckill;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;

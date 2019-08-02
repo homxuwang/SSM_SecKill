@@ -1,6 +1,7 @@
-package homxuwang.github.io.dao;
+package homxuwang.github.io.seckill.dao;
 
-import homxuwang.github.io.entity.SuccessKilled;
+import homxuwang.github.io.seckill.entity.SuccessKilled;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @author github.com/homxuwang
@@ -14,13 +15,13 @@ public interface SuccessKilledDao {
      * @param userPhone
      * @return 插入的行数
      */
-    int insertSuccessKilled(long seckillId,long userPhone);
+    int insertSuccessKilled(@Param("seckillId") long seckillId,@Param("userPhone") long userPhone);
 
     /**
      * 根据id查询SuccessKilled并携带秒杀产品对象实体
      * @param seckillId
      * @return
      */
-    SuccessKilled queryByIdWithSeckill(long seckillId);
+    SuccessKilled queryByIdWithSeckill(@Param("seckillId")long seckillId,@Param("userPhone") long userPhone);
 
 }

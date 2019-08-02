@@ -1,6 +1,6 @@
-package homxuwang.github.io.dao;
+package homxuwang.github.io.seckill.dao;
 
-import homxuwang.github.io.entity.Seckill;
+import homxuwang.github.io.seckill.entity.Seckill;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -10,8 +10,6 @@ import javax.annotation.Resource;
 
 import java.util.Date;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * @author github.com/homxuwang

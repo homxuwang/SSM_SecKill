@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="homxuwang.github.io.dao.SeckillDao">
+<mapper namespace="homxuwang.github.io.seckill.dao.SeckillDao">
     <!-- mapper的目的:为DAO接口方法提供sql语句配置 -->
     <update id="reduceNumber">
         <!-- 具体sql -->

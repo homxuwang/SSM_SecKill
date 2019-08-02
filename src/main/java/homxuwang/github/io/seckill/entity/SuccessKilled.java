@@ -1,4 +1,4 @@
-package homxuwang.github.io.entity;
+package homxuwang.github.io.seckill.entity;
 
 import java.util.Date;
 
